@@ -3,22 +3,26 @@
 <html>
     <head>
         <title>My first web page</title>
-        <style>
-            img {
-                width: 100px;
-                border-radius: 50px;
-                float: left;
-                margin-right: 10px;
-            }
-            .username {
-                font-weight: bold;
-            }
-        </style>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <img src="../img/GithubPFP.png" alt="My GitHub Profile Picture">
-        <p class="username">@LuccaC-M</p>
-        <p>Long Live the &lt;bloat&gt;</p>
-        <a href="about.html">About Me</a>
+
+        <p class="username">LuccaC-M</p>
+        <p>Hello, World</p>
+
+        <a href="about.html">About Me</a><br><br>
+
+        <label for="name">username:</label>
+        <input type="text" id="name" placeholder="Thy name"><br>
+
+        <label for="text">Your text:</label>
+        <input type="text" id="text" placeholder="Your text"><br>
+        <button type="button" id="nameButton">submit</button><br>
+
+        <script src="index.js"></script>
+
+        <p class="username" id="username">Your username</p>
+        <p id="usertext">Your text</p>
     </body>
 </html>
